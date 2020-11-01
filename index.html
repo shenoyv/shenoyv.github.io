@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Shenoyv.com</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     body{
     
     font-family:Avenir,Roman,Sans-serif;
    /* background-color: #040714;
-    color: #fff; */
-    background-color: #2234ae;
-background-image: linear-gradient(315deg, #2234ae 74%, #191714 0%);
+    color: #fff; 
+    background-color: #2a2a72;
+background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);*/
+background-color: #2234ae;
+background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
 
 
     color:#fff;
     background-size : 100%;
     }
     #text1{
-        background-color: #2234ae;
-background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+       
 
     color:#fff;
     font-size:32px;
@@ -32,31 +34,117 @@ background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
     margin-right:10px;
     }
     .card-body{
-    
-    color:black;
+        
+        color:black;
 
     }
 
 .button{
     color:white;
     background-color: #2234ae;
-background-image: linear-gradient(315deg, #2234ae 74%, #191714 0%);
+background-image: linear-gradient(180deg, #2234ae 74%, #191714 0%);
+
+}
+.container img{
+    opacity: 0.45;
+}
+#foot.tex{
+    background-color: #130f40;
+background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+    height: 80px;
+    bottom: 0px;
+    left: 0px;
+    text-align:center;
+   
+    color:white;
+
+}
+#text2.tex{
+    background-color:whitesmoke;
+
+    height: 64px;
+    bottom: 0px;
+    left: 0px;
+    text-align:center;
+   
+    color:darkblue;
+
+}
+.tex h5{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+#col{
+    margin-top:10px;
+}
+
+.navbar-nav{
+
+    position: absolute;
+    right: 3%;
+   
+
 
 }
 
-    
+.navbar-nav a{
+    color:darkblue;
+}
+.navbar-brand a{
+    color:darkblue;
+}
+
+
+.card{
+margin-top:50px;
+transition: transform .5s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.text1{
+    margin-bottom:50px;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: darkblue !important;
+}
+.frames i{
+    margin: 8px 5px 0px 5px;
+}
 </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
+    <nav class="navbar navbar-expand-lg  bg-light">
+        <a class="navbar-brand" href="#"><span style="color:darkblue;"><b>Shenoyv</b></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        
+          <div class="navbar-nav"id="text3">
+            <a class="nav-item nav-link active" href="#"><b>Home</b> <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#"><b>Blogs</b></a>
+            <a class="nav-item nav-link" href="#"><b>Contacts</b></a>
+            <a class="nav-item nav-link" href="#"><b>CV</b></a>
+        </div>
+        </div>
+      </nav>
 <br>
 <br>
 <br>
 
-<div class="container" id="Text1">
-  
-  <h1><b>VARUN SHENOY</b></h1>
+
+
+
+
+<div class="container" >
+    
+
+  <h1 style="text-align:center;"><b>VARUN SHENOY</b></h1>
   <br>
-  <h2><b>A short summary of my Life!!!</b></h2> 
+  
   <br>
 </div>
 
@@ -67,18 +155,18 @@ background-image: linear-gradient(315deg, #2234ae 74%, #191714 0%);
 <div class="col-sm-4">
 <div class="card" style="width: 20rem;">
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
+    <h5 class="card-title"><b>My Projects</b></h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary">Click Here</a>
   </div>
 </div>
 </div>
 <div class="col-sm-4" >
 <div class="card" style="width: 20rem;">
     <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
+      <h5 class="card-title"><b>My Skills</b></h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-primary">Click Here</a>
     </div>
   </div>
   </div>
@@ -86,22 +174,38 @@ background-image: linear-gradient(315deg, #2234ae 74%, #191714 0%);
   <div class="col-sm-4">
     <div class="card" style="width: 20rem;">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
+          <h5 class="card-title"><b>My Internship Experience</b></h5>
           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-primary">Click Here</a>
         </div>
       </div>
       </div>
   
 </div>
 </div>
+<br>
+<br>
+
   <br>
   <br>
-  
+<div id="text2" class="tex">
+<br>
+
+<h3><b>Blogs</b></h3>
+
+<br>
+<br>
+</div>
+<br>
+<br>
+
+
+<br>
+<br>
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-        <img src="blog-3.jpg" class="float-left" alt="Paris" width="500" height="300">
+        <img src="images/blockchain.jpg" class="float-left" alt="Paris" width="500" height="300">
      </div>
      <div class="col-sm-4">
         
@@ -124,7 +228,7 @@ background-image: linear-gradient(315deg, #2234ae 74%, #191714 0%);
       <div class="col-sm-4">
        
        <h2 class="white-text text-center" style="padding: 50px 0px 50px 0px; margin-left:20px;">
-          <b>XYZ topic</b></h2>
+          <b>Introduction to Python</b></h2>
         </div>
         <div class="col-sm-4">
        
@@ -132,7 +236,7 @@ background-image: linear-gradient(315deg, #2234ae 74%, #191714 0%);
         </div>
 
         <div class="col-sm-4">
-            <img src="blog-3.jpg" class="float-right" alt="Paris" width="500" height="300">
+            <img src="images\image2.jpg" class="float-right" alt="Paris" width="500" height="300">
          </div>
          <div class="col-sm-4">
             
@@ -144,7 +248,7 @@ background-image: linear-gradient(315deg, #2234ae 74%, #191714 0%);
     <div class="container">
         <div class="row">
           <div class="col-sm-4">
-              <img src="blog-3.jpg" class="float-left" alt="Paris" width="500" height="300">
+              <img src="images\image4.jpg" class="float-left" alt="Paris" width="500" height="300">
            </div>
            <div class="col-sm-4">
               
@@ -153,10 +257,35 @@ background-image: linear-gradient(315deg, #2234ae 74%, #191714 0%);
           <div class="col-sm-4">
            
            <h2 class="white-text text-center" style="padding: 50px 0px 50px 0px; margin-right:20px;">
-              <b>XYZ Topic</b></h2>
+              <b>Tips and Tricks</b></h2>
             </div>
           
         </div>
+        </div>
+        <br>
+        
+        
+        
+        
+        <div id="foot" class="tex">
+            <footer class="page-footer font-small whitesmoke">
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3"><b>Connect with us on</b>
+              
+           <div class="frames">
+                
+            
+              <i class="fa fa-facebook" style="font-size:20px"></i>
+              <i class="fa fa-github" style="font-size:20px"></i>
+              <i class="fa fa-envelope" style="font-size:20px"></i>
+              <i class="fa fa-linkedin" style="font-size:20px"></i>
+            </div>
+            
+            </div>
+            
+            
+          </footer>
         </div>
 </body>
 </html>
