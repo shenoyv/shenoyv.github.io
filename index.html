@@ -70,17 +70,17 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter">
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/" target="_blank" data-original-title="Follow us on Twitter">
                             <i class="fa fa-twitter"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" data-original-title="Like us on Facebook">
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/" target="_blank" data-original-title="Like us on Facebook">
                             <i class="fa fa-facebook-square"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" data-original-title="Follow us on Instagram">
+                        <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/" target="_blank" data-original-title="Follow us on Instagram">
                             <i class="fa fa-instagram"></i>
                         </a>
                     </li>
@@ -227,7 +227,7 @@ These solutions can help you improve your business workflow and grow beyond limi
                                         </p>
                                     </div>
                                     <div class="card-footer justify-content-center">
-                                        <a href="#pablo" class="btn btn-primary btn-xs">Get Started</a>
+                                        <a href="#contactus" class="btn btn-primary btn-xs">Get Started</a>
                                     </div>
                                 </form>
                             </div>
@@ -250,7 +250,7 @@ These solutions can help you improve your business workflow and grow beyond limi
                                             </p>
                                     </div>
                                     <div class="card-footer justify-content-center">
-                                        <a href="#pablo" class="btn  btn-info btn-xs">Get Started</a>
+                                        <a href="#contactus" class="btn  btn-info btn-xs">Get Started</a>
                                     </div>
                                 </form>
                             </div>
@@ -272,7 +272,7 @@ These solutions can help you improve your business workflow and grow beyond limi
                                         
                                     </div>
                                     <div class="card-footer justify-content-center">
-                                        <a href="#pablo" class="btn  btn-success btn-xs">Get Started</a>
+                                        <a href="#contactus" class="btn  btn-success btn-xs">Get Started</a>
                                     </div>
                                 </form>
                             </div>
@@ -338,23 +338,23 @@ These solutions can help you improve your business workflow and grow beyond limi
             <nav class="pull-left">
                 <ul>
                     <li>
-                        <a href="https://www.creative-tim.com">
-                            EXPAND
+                        <a href="#services">
+                            OUR SERVICES
                         </a>
                     </li>
                     <li>
-                        <a href="http://presentation.creative-tim.com">
-                            About Us
+                        <a href="#portfolio">
+                            PORTFOLIO
                         </a>
                     </li>
                     <li>
-                        <a href="http://blog.creative-tim.com">
-                            Our Services
+                        <a href="#pricing">
+                            PRICING
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.creative-tim.com/license">
-                            Contact Us
+                        <a href="#contactus">
+                            CONTACT US
                         </a>
                     </li>
                 </ul>
@@ -384,5 +384,13 @@ These solutions can help you improve your business workflow and grow beyond limi
     <script src="./assets/assets-for-demo/js/material-kit-demo.js"></script>
 </body>
 
+<script>
+    $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
 
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+</script>
 </html>
